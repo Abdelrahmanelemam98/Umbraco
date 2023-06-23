@@ -1,0 +1,59 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.About>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+
+
+<section id="about_pg ">
+ <div class="about_pgm">
+  <div class="container-xl">
+  <div class="row about_pg1">
+    <div class="col-md-12">
+	  <h2 class="text-light"><span class="col_red text-light">@Model.Value("headerInner")</span ><br>
+@Model.Value("span")</h2>
+      <p class="mt-3 w-50 text-light">@Model.Value("para2")</p>
+	  <p class="w-50 text-light">@Model.Value("para3")</p>
+	  <p class="w-50 text-light">@Model.Value("paragraph")</p>
+	  <h6 class="mb-0 text-light" "><a class="button btn btn-primary" style="text-decoration:none; href="#">@Model.Value("anchor")</a></h6>
+	</div>
+  </div>
+ </div>
+ </div>
+</section> 
+
+<section id="about_pg " style="background-color:#333">
+ <div class="about_pgm">
+  <div class="container-xl">
+  <div class="row about_pg1">
+    <div class="col-md-12">
+    <div class="row">
+       
+        <div class="inner-about col-md-6 col-6">
+             <h1 class="text-light">
+            @Model.Value("heading")
+        </h1>
+         @{
+    if (Model.Value<string[]>("col2").Length > 0)
+    {
+        <ul>
+            @foreach (var item in Model.Value<string[]>("col2"))
+            {
+                <li class="text-light">@item</li>
+            }
+        </ul>
+    }
+}
+    </div>
+      <div  class="col-md-6 col-6">
+          <img class="img img-fluid" src="/assest/img/4.jpg" style="width:500px; height:550px;">
+      </div>
+    </div>
+	</div>
+  </div>
+ </div>
+ </div>
+</section>
+

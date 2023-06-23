@@ -1,0 +1,19 @@
+ 
+ .about_pgm{
+background-color: rgba(0, 0, 0, 0.8);
+padding-top:50px;
+padding-bottom:50px; 
+ }
+#about_pg {
+background-image: url(wwwroor/assest/img/2.jpg);
+background-position: center;
+}
+.inner-about{
+    padding:10rem;
+}
+
+.side-img{
+    width:500px;
+    height:500px;
+   
+}

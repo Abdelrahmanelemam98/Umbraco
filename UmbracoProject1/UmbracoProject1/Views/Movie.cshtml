@@ -1,0 +1,99 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Moive>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+    <!-- Header -->
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="heading-main">
+                      <h2 class="text-light" style="color:#f1f1f1">Movie</h2>
+            </div>
+            <div class="main">
+              <div class="inner-main col-md-4 col-12">
+                <div class="card" style="width: 18rem">
+                            <img src="~/assest/img/12.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div class="title">
+                      <h2 class="text-light" style="color:#f1f1f1">@Model.Value("Moviename")</h2>
+                    </div>
+                     <p class="card-text text-light" style="color:#f1f1f1">
+                      @Model.Value("movieDesc")
+                    </p>
+                    <div class="details">
+                      <a href="" style="color:red;">View</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ////////////////// -->
+              <div class="inner-main col-md-4 col-12">
+                <div class="card" style="width: 18rem">
+                  <img src="~/assest/img/14.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div class="title">
+                      <h2 class="text-light" style="color:white">@Model.Value("Moviename")</h2>
+                    </div>
+                    <p class="card-text text-light" style="color:#f1f1f1">
+                      @Model.Value("movieDesc")
+                    </p>
+                    <div class="details">
+                      <a href="" style="color:red;">View</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /////////////////// -->
+              <div class="inner-main col-md-4 col-12">
+                <div class="card" style="width: 18rem">
+                            <img src="~/assest/img/13.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div class="title">
+                      <h2 class="text-light" style="color:#f1f1f1">@Model.Value("Moviename")</h2>
+                    </div>
+                      <p class="card-text text-light" style="color:#f1f1f1">
+                      @Model.Value("movieDesc")
+                    </p>
+                    <div class="details">
+                      <a href="" style="color:red;">View</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //////////////////////// -->
+              <div class="inner-main col-md-4 col-12">
+                <div class="card" style="width: 18rem">
+                            <img src="~/assest/img/15.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div class="title">
+                      <h2 class="text-light">@Model.Value("Moviename")</h2>
+                    </div>
+                     <p class="card-text text-light"style="color:#f1f1f1">
+                      @Model.Value("movieDesc")
+                    </p>
+                    <div class="details">
+                      <a href="" style="color:red;">View</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ////////////////////// -->
+              <div class="inner-main col-md-4 col-12">
+                <div class="card" style="width: 18rem">
+                      
+                    </div>
+                    
+                    
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

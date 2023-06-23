@@ -1,0 +1,135 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awsome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Bootstrap Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/movie.css" />
+
+    
+    <title>Movies</title>
+  </head>
+  <body>
+   @await Html.PartialAsync("Navigation")
+    <!-- Header -->
+    @RenderBody()
+    <!--footer-->
+     <footer class="bg-dark text-light text-center text-lg-start">
+      <div class="container p-4 pb-0">
+        <form action="">
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <div class="inner-footer">
+                <h2>Movie</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit Lorem ipsum dolor
+                  sit amet consectetur adipisicing
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="col-auto mb-4 mb-md-0">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <div class="col-md-8 col-12 mb-4 mb-md-0">
+                <div class="form-outline mb-4">
+                  <input
+                    type="email"
+                    id="form5Example25"
+                    class="form-control"
+                    placeholder="Email Address"
+                  />
+                </div>
+              </div>
+              <div class="col-auto mb-4 mb-md-0">
+                <button type="submit" class="btn btn-danger mb-4">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <h2>Contact</h2>
+              <div class="contact">
+                <p>
+                  <i class="fa-solid fa-phone m-2 pl-2 text-danger"></i>
+                  +034084
+                </p>
+                <p>
+                  <i class="fa-solid fa-location-dot m-2 pl-2 text-danger"></i>
+                  New York
+                </p>
+                <p>
+                  <i class="fa-solid fa-envelope m-2 pl-2 text-danger"></i>
+                  Movie@example.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 bg-dark">
+            <div class="text-center p-3">© 2023 Copyright</div>
+          </div>
+          <div class="col-md-6 bg-dark">
+            <div class="contact-icon text-center pt-3 pl-1">
+              <span><i class="fa-brands fa-facebook"></i></span>
+              <span><i class="fa-brands fa-twitter"></i></span>
+              <span><i class="fa-brands fa-instagram"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap Bundle js link -->
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar_sticky = document.getElementById("navbar_sticky");
+      var sticky = navbar_sticky.offsetTop;
+      var navbar_height = document.querySelector(".navbar").offsetHeight;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky + navbar_height) {
+          navbar_sticky.classList.add("sticky");
+          document.body.style.paddingTop = navbar_height + "px";
+        } else {
+          navbar_sticky.classList.remove("sticky");
+          document.body.style.paddingTop = "0";
+        }
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+    
